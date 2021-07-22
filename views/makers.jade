@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Mission Impossible Maker
+    link(rel="stylesheet" type="text/css" href="/stylesheets/main.css")
+  body
+    div(id='container')
+
+      label(for='name' class='col-lg-2 control-label')
+        a(href='/users') Users
+        =" | "
+        a Makers
+
+      <img src="/images/letter.jpg" width=100% height=100%><br>
+      h2(id='description')
+        span='Fund Balances : ' + fund_balance
+        font(color='gray')  ETH
+
+      h2(id='description')
+        span='Ether Balances : ' + maker_balance
+        font(color='gray')  ETH
+
+      button(id='button' onClick="location.href='/makers/withdraw'") Withdraw ETH
+      //button(id='button' onClick="location.href='/makers/movie'") Movie Upload
+
+      div(id='comment' class='account')
+        li Crowdfund Account :
+          ul= 'Account : ' + fund
+          ul= 'Balance : ' + fund_balance + ' (ETH), '
+          ul= 'Token : ' + fund_tamount + ' (TDs)'
+        li beneficiary Account :
+          ul= 'Account : ' + maker
+          ul= 'balance : ' + maker_balance + ' (ETH), '
+          ul= 'Token : ' + maker_tamount + ' (TDs)'
