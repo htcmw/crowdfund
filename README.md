@@ -4,11 +4,12 @@
 
 ### **1.1 소개**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40646b3b-2f82-4f82-b1c6-509123fecdb8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40646b3b-2f82-4f82-b1c6-509123fecdb8/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/72326934/147048817-7d7a6a75-a9c3-49c2-a086-d5d89dae9f0b.png)
 
 크라우드펀딩은 군중 또는 다수를 의미하는 영어 단어 크라우드(Crowd)와 자금조달을 뜻하는 펀딩(Funding)을 조합한 용어이다. 창의적 아이템을 가진 초기 기업가를 비롯한 자금수요자가 중개업자(온라인소액투자중개업자)의 온라인 플랫폼에서 집단지성 (The Wisdom of Crowds)을 활용하여 다수의 소액투자자로부터 자금을 조달하는 행위 를 크라우드펀딩이라 한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a50e12c-6fc5-4866-9c33-b02ce2019edd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a50e12c-6fc5-4866-9c33-b02ce2019edd/Untitled.png)
+![Untitled 1](https://user-images.githubusercontent.com/72326934/147048936-2de38f98-7c56-42d0-a999-894be03d2008.png)
+
 
 ### **1.2 요구사항**
 
@@ -460,23 +461,23 @@ function fundingReset() public {
 
 ## 3. Remix 배포 과정
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fde46768-2023-4a52-95fc-6ee9b4cd963d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fde46768-2023-4a52-95fc-6ee9b4cd963d/Untitled.png)
+![Untitled 2](https://user-images.githubusercontent.com/72326934/147049221-bbe84dee-67fe-4203-a544-f2546bcd887c.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24fd0e87-3539-48bb-a275-37fadab73bc1/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24fd0e87-3539-48bb-a275-37fadab73bc1/Untitled.png)
+![Untitled 3](https://user-images.githubusercontent.com/72326934/147049245-fd479544-4602-407c-b688-47cb02a3f4fb.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6eb15459-8b76-4979-9138-ed89d9d9f788/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6eb15459-8b76-4979-9138-ed89d9d9f788/Untitled.png)
+![Untitled 4](https://user-images.githubusercontent.com/72326934/147049273-4515b6cd-a80a-447c-9017-626ddf63f644.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e08489ec-f782-4e2f-b7c4-f8c4832f5114/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e08489ec-f782-4e2f-b7c4-f8c4832f5114/Untitled.png)
+![Untitled 5](https://user-images.githubusercontent.com/72326934/147049295-531796e3-5961-4b95-ae76-9096c5dde799.png)
 
 IERC20.sol은 interface이므로 배포하지 않는다. ERC20Tonken 컨트렉트에서는 SafeMath, Owanable 컨트랙트를 상속 받기 때문에, SafeMath, Ownable를 배포한 후 ERC20Token을 배포해야 한다. CrowdFund는 ERC20Token의 CA와 펀딩금을 받을 EOA를 입력해서 배포한다.
 
 ### 3.1 Remix Deployed Contract 결과
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a8d16d-9978-41b1-9e7b-5f280a6b24bd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a8d16d-9978-41b1-9e7b-5f280a6b24bd/Untitled.png)
+![Untitled 6](https://user-images.githubusercontent.com/72326934/147049331-26c9da35-21cc-418a-8781-77d1bbe94ea8.png)
 
 remix에서 배포하면 아래 처럼 배포된 컨트랙트의 변수와 함수를 확인해 볼수 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c6c4751-c959-4c23-8d81-dc94e88e89e4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c6c4751-c959-4c23-8d81-dc94e88e89e4/Untitled.png)
+![Untitled 7](https://user-images.githubusercontent.com/72326934/147049374-e31c2711-ed18-4161-a7e4-8c9c5a3efcba.png)
 
 CrowdFunding Contract address에 FundingToken을 전송함으로써 솔리디티 배포를 마친다.
 
@@ -498,21 +499,21 @@ Returned error: VM Exception while processing transaction: revert
 
 ### 3.2 Remix에서 확인되는 트랙잭션
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9514ffdf-da18-403b-846b-d69b1cc6bf8e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9514ffdf-da18-403b-846b-d69b1cc6bf8e/Untitled.png)
+![Untitled 8](https://user-images.githubusercontent.com/72326934/147049406-17926548-c6b8-4561-9ff9-c0447a3d5eb2.png)
 
 위의 배포과정에서 생성된 트랜잭션을 확인할 수 있다.
 
 ### 3.3 Token contract를 Ganache 네트워크에 배포 트랜잭션
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7962c7a4-f926-4880-9eb7-914697401cc6/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7962c7a4-f926-4880-9eb7-914697401cc6/Untitled.png)
+![Untitled 9](https://user-images.githubusercontent.com/72326934/147049429-65da4982-4515-4414-aecd-6e0f3c33db8b.png)
 
 ### 3.4 CrowdFund contract를 Ganache 네트워크에 배포 트랜잭션
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3ac1257-9f6a-4163-916f-7a0cb3711eb4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3ac1257-9f6a-4163-916f-7a0cb3711eb4/Untitled.png)
+![Untitled 10](https://user-images.githubusercontent.com/72326934/147049459-15d98387-e052-4b45-b3ca-87cc426e54d8.png)
 
 ### 3.5 Remix에서 Token contract의 mint 로 CrowdFund contract에 토큰 생성
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3382bec6-8904-4b79-8f72-1e6770d725e5/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3382bec6-8904-4b79-8f72-1e6770d725e5/Untitled.png)
+![Untitled 11](https://user-images.githubusercontent.com/72326934/147049487-6c2b116f-0fda-4432-839f-caacba94726b.png)
 
 # 4. JavaScript
 
